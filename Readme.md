@@ -41,17 +41,27 @@ Or I can escape my quotes:
 
 Any quote that is preceded by a slash is escaped, and understood to be part of the value of the string.
 
-```javascript
-var security = require( 'ferds-security' );
-var text = '<script>alert("XXX");</script>';
-var sanitize_text = security.sanitizer( text );
+If you using Ferds Security, the usage will be very simple like this :
 
-console.log( sanitize_text );
+```javascript
+var text1 = "Hello \"World.\"";
+var text2 = 'Hello "World."';
+var text3 = "Hello World.";
+
+var escape_text1 = security.escape_string( text1 );
+var escape_text2 = security.escape_string( text2 );
+var escape_text3 = security.escape_string( text3 );
+
+console.log( escape_text1 );
+console.log( escape_text2 );
+console.log( escape_text3 );
 ```
 
 The results will be like this :
 ```
-&lt;script&gt;alert(&quot;XXX&quot;);&lt;&#x2F;script&gt;
+Hello \"World.\"
+Hello \"World.\"
+Hello World.
 ```
 
 ### Sanitize
