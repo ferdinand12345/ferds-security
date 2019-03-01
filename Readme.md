@@ -11,3 +11,8 @@ Now, let’s describe the features:
 
 - Cross Site Scripting prevention filter.
 - SQL escape string
+
+## Installation
+```
+$ npm install ferds-security
+```
