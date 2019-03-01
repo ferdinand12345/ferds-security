@@ -19,7 +19,8 @@
 		"filtering",
 		"sql",
 		"mysql",
-		"mongodb"
+		"mongodb",
+		"xss"
 	],
 	"author": {
 		"name": "Fedinand",

@@ -86,3 +86,7 @@ The results will be like this :
 ```
 &lt;script&gt;alert(&quot;XXX&quot;);&lt;&#x2F;script&gt;
 ```
+
+## Author
+
+Ferdinand [<ferdshinodas@gmail.com>]
