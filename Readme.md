@@ -41,7 +41,7 @@ Or I can escape my quotes:
 
 Any quote that is preceded by a slash is escaped, and understood to be part of the value of the string.
 
-If you using Ferds Security, the usage will be very simple like this :
+If you using Ferds Security, the usage of escape string will be very simple like this :
 
 ```javascript
 var text1 = "Hello \"World.\"";
@@ -65,6 +65,12 @@ Hello World.
 ```
 
 ### Sanitize
+
+To prevent the Cross Site Scripting, you can use three ways :
+
+* Escaping
+* Validating Input (You can use [Ferds Validator](https://www.npmjs.com/package/ferds-validator) to creating simple validation with various function methods.)
+* Sanitizing
 
 Okay, now we will try to prevent Cross Site Scripting with Sanitize function. Examples of simple use :
 
