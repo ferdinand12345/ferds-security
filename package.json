@@ -1,0 +1,33 @@
+{
+	"name": "ferds-security",
+	"version": "1.0.0",
+	"description": "The Ferds-Security contains methods that help you create a secure application, processing input data for security.",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/verdomazeg/ferds-security.git"
+	},
+	"keywords": [
+		"sanitizer",
+		"nodejs",
+		"express",
+		"security",
+		"escapestring",
+		"filtering",
+		"sql",
+		"mysql",
+		"mongodb"
+	],
+	"author": {
+		"name": "Fedinand",
+		"email": "ferdshinodas@gmail.com"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/verdomazeg/ferds-security/issues"
+	},
+	"homepage": "https://github.com/verdomazeg/ferds-security#readme"
+}
