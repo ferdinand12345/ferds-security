@@ -16,3 +16,17 @@ Now, let’s describe the features:
 ```
 $ npm install ferds-security
 ```
+
+## Usages
+
+### Sanitize
+
+Okay, now we will try to prevent Cross Site Scripting with Sanitize function. Examples of simple use :
+
+```javascript
+var security = require( 'ferds-security' );
+var text = '<script>alert("XXX");</script>';
+var sanitize_text = security.sanitizer( text );
+
+console.log( sanitize_text );
+```
