@@ -81,10 +81,19 @@ console.log( "The strength of the Password 1 is " + strength_password1 );
 console.log( "The strength of the Password 2 is " + strength_password2 );
 ```
 
+Results :
+
 ```
 The strength of the Password 1 is 25
 The strength of the Password 2 is 100
 ```
+
+This is some criteria of strength of your password :
+
+| Score | Description |
+| ------------- |:-------------:|
+| < 50 | Very Bad |
+
 ### Sanitize
 
 To prevent the Cross Site Scripting, you can use three ways :
