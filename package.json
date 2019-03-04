@@ -1,6 +1,6 @@
 {
 	"name": "ferds-security",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "The Ferds-Security contains methods that help you create a secure application, processing input data for security.",
 	"main": "index.js",
 	"scripts": {
