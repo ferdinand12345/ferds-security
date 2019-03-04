@@ -92,7 +92,10 @@ This is some criteria of strength of your password :
 
 | Score | Description |
 | ------------- |:-------------:|
-| < 50 | Very Bad |
+| 0 - 25 | Very Bad |
+| 26-50 | Weak |
+| 51-75 | Good |
+| 76-100 | Strong |
 
 ### Sanitize
 
