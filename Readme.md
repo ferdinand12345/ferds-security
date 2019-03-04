@@ -11,6 +11,7 @@ Now, let’s describe the features:
 
 - Cross Site Scripting prevention filter.
 - SQL escape string
+- Password Strength Meter
 
 ## Installation
 ```
@@ -64,6 +65,11 @@ Hello \"World.\"
 Hello World.
 ```
 
+### Password Strength Meter
+
+```
+"No system is totally secure...", Chris Hoofnagle
+```
 ### Sanitize
 
 To prevent the Cross Site Scripting, you can use three ways :

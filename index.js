@@ -55,3 +55,44 @@ exports.sanitizer = function( str ) {
 	return str.replace( reg, ( match ) =>( map[match] ) );
 }
 // --------------------------------------------------------------------
+
+/**
+ * A password strength meter is an indicator, either in graphical or text 
+ * form, of the strength of a password as entered by a user.
+ *
+ * @param	string
+ * @return	array
+ */
+exports.password_strength_meter = function( str ) {
+	var score = 0;
+	if ( !str ) {
+		return score;
+	}
+
+	var letters = new Object();
+	for ( var i = 0; i < str.length; i++ ) {
+		letters[str[i]] = ( letters[str[i]] || 0 ) + 1;
+		score += 5.0 / letters[str[i]];
+	}
+
+	var variations = {
+		digits: /\d/.test( str ),
+		lower: /[a-z]/.test( str ),
+		upper: /[A-Z]/.test( str ),
+		nonWords: /\W/.test( str ),
+	}
+
+	var variation_count = 0;
+	for ( var check in variations ) {
+		variation_count += ( variations[check] == true) ? 1 : 0;
+	}
+	score += ( variation_count - 1) * 10;
+
+	if ( parseInt( score ) <= 100 ) {
+		return parseInt( score );
+	}
+	else {
+		return 100;
+	}
+}
+// --------------------------------------------------------------------

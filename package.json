@@ -20,7 +20,8 @@
 		"sql",
 		"mysql",
 		"mongodb",
-		"xss"
+		"xss",
+		"password"
 	],
 	"author": {
 		"name": "Fedinand",
