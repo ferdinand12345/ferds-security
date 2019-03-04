@@ -70,6 +70,21 @@ Hello World.
 ```
 "No system is totally secure...", Chris Hoofnagle
 ```
+
+If we read the that's quote, yes, that's right quote. But, we can set a small prevention for attacker with great password. You can use password_strength_meter function to give you information about the strength of the password. The function will be simple like this :
+
+```javascript
+var strength_password1 = security.password_strength_meter( "ABCDZ" );
+var strength_password2 = security.password_strength_meter( "ABCDZ!@#123_~KWJFKWJFKJWFK*@&$(@&" );
+
+console.log( "The strength of the Password 1 is " + strength_password1 );
+console.log( "The strength of the Password 2 is " + strength_password2 );
+```
+
+```
+The strength of the Password 1 is 25
+The strength of the Password 2 is 100
+```
 ### Sanitize
 
 To prevent the Cross Site Scripting, you can use three ways :
